@@ -4,6 +4,7 @@ import './tarjetaImagen.css';
 import BotonDescarga from './BotonDescarga/BotonDescarga';
 
 const TarjetaImagen = ({ url, handleOpen }) => {
+  
   const handleDownload = async () => {
     try {
       // Descargar la imagen directamente desde la URL de Pexels
@@ -14,6 +15,7 @@ const TarjetaImagen = ({ url, handleOpen }) => {
       console.error('Error al descargar la imagen:', error);
     }
   };
+
 
   return (
     <div className="tarjetaImagen">
@@ -28,5 +30,4 @@ const TarjetaImagen = ({ url, handleOpen }) => {
     </div>
   );
 };
-
 export default TarjetaImagen;

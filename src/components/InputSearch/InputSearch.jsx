@@ -12,7 +12,7 @@ const InputSearch = ( {setImagenes} ) => {
    const handleChange = (event) => {
     setText(event.target.value)
    }
-   
+
    return (
        <form onSubmit={handleSubmit} className="form">
            <input onChange={handleChange} className="form__input" placeholder="Busca fotos gratuitas"></input>
