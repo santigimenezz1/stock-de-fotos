@@ -17,7 +17,7 @@
 }
 
 .form__input:focus {
-    outline: 3px solid rgb(16, 174, 236); /* Elimina el borde externo al hacer clic en el input */
+    outline: 3px solid rgb(16, 174, 236); 
     border: none;
   }
 
