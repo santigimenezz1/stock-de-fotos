@@ -1,0 +1,29 @@
+.nav{
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.nav__image{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.nav__input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav__image img{
+    width: 120px;
+}
+
+
+
+ 

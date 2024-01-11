@@ -1,16 +1,28 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react"
+import NavBar from "./components/NavBar/NavBar"
+import ModalImagen from "./components/ModalImagen/ModalImagen"
 
-function App() {
-  const [count, setCount] = useState(0)
 
-  return (
-    <>
-     <h1>nueva App stock de fotos</h1>
-    </>
-  )
+const Inicio =  () => {
+    const[text, setText] = useState("paris")
+    const[imagenes, setImagenes] = useState([])
+    console.log(imagenes)
+    return (
+        <>
+            <NavBar text={text} setText={setText} setImagenes={setImagenes} />
+            <div class="grid-container">
+            {
+                imagenes.map((img)=>(
+                        <div className="grid-item">
+                        <ModalImagen img={img} />
+                </div>
+               
+               ))
+               
+            }
+            </div>
+
+        </>
+    )
 }
-
-export default App
+export default Inicio
