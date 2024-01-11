@@ -1,0 +1,15 @@
+img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  .grid-container {
+      columns: 5 250px;
+      column-gap: 1px;
+      padding: .9rem;
+    }
+    
+    .grid-item {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+    
