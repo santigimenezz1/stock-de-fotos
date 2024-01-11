@@ -4,17 +4,22 @@ import InputSearch from '../InputSearch/InputSearch'
 import './navBar.css'
 import BotonesEnlaces from '../BotonesEnlaces/BotonesEnlaces'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
+import { Link } from 'react-router-dom'
 const NavBar = ( {setImagenes, handleDatosCargados} ) => {
     return (
         <nav className='nav'>
             <div className='nav__image'>
+                <Link to={'/'}>
             <img src='https://res.cloudinary.com/dcf9eqqgt/image/upload/v1705007307/pixel_studio_ocmvav.png'></img>
+                </Link>
             <BotonesEnlaces />
             </div>
             <div className='nav__input'>
             <InputSearch setImagenes={setImagenes}  />
             </div>
+            <Link to={'/perfil'}>
             <AccountCircleIcon fontSize='large' style={{cursor:"pointer"}} />
+            </Link>
         </nav>
     )
 }

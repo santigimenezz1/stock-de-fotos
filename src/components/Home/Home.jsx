@@ -7,7 +7,6 @@ import { search } from "../PeticionesFetch/Peticiones"
 const Home = () => {
     const[imagenes, setImagenes] = useState([])
     
-
     useEffect(()=>{
         search( "gatos", setImagenes)
     },[])

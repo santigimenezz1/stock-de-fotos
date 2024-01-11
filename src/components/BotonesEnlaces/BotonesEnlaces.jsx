@@ -1,20 +1,21 @@
 import { useState } from "react"
 import BotonNavBar from "../BotonNavBar/BotonNavBar"
+import { Link } from "react-router-dom"
 
 const BotonesEnlaces = () => {
     const [botonActive, setBotonActive] = useState("Inicio")
 
     return (
         <div style={{display:"flex", gap:"15px"}}>
-        <div>
+        <Link to={'/'}>
             <BotonNavBar  text={"Inicio"} botonActive={botonActive}  setBotonActive={setBotonActive}/> 
-            </div>
-            <div>
+            </Link>
+            <Link to={'/explorar'}>
             <BotonNavBar text={"Explorar"} botonActive={botonActive} setBotonActive={setBotonActive} /> 
-            </div>
-            <div>
+            </Link >
+            <Link to={'/crear'}>
             <BotonNavBar text={"Crear"} botonActive={botonActive} setBotonActive={setBotonActive}  /> 
-            </div>
+            </Link>
         </div>
     )
 }
