@@ -28,7 +28,7 @@ function ModalImagen( {img} ) {
   return (
     <div>
         <div>
-             <TarjetaImagen handleOpen={handleOpen} url={img.src.original} />
+             <TarjetaImagen handleOpen={handleOpen} url={img.src.portrait} />
         </div>
       <Modal
         open={open}

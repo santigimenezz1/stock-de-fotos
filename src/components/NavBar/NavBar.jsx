@@ -2,7 +2,7 @@ import BotonNavBar from '../BotonNavBar/BotonNavBar'
 import InputSearch from '../InputSearch/InputSearch'
 import './navBar.css'
 
-const NavBar = ( {setImagenes} ) => {
+const NavBar = ( {setImagenes, handleDatosCargados} ) => {
     return (
         <nav className='nav'>
             <div className='nav__image'>

@@ -1,7 +1,7 @@
 import ModalImagen from "../../ModalImagen/ModalImagen"
 import '../Main/main.css'
 
-const Main = ( {imagenes} ) => {
+const Main =   ( {imagenes} ) => {
     return(
         <div class="grid-container">
         {
