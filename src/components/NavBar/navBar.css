@@ -21,7 +21,8 @@
     align-items: center;
 }
 .nav__image img{
-    width: 120px;
+    width: 85px;
+    cursor: pointer;
 }
 .logo__perfil{
     width: 70px;
