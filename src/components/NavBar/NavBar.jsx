@@ -5,6 +5,7 @@ import './navBar.css'
 import BotonesEnlaces from '../BotonesEnlaces/BotonesEnlaces'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Link } from 'react-router-dom'
+import Selector from '../Selector/Selector'
 const NavBar = ( {setImagenes, handleDatosCargados} ) => {
     return (
         <nav className='nav'>
