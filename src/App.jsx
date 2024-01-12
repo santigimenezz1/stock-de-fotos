@@ -5,6 +5,7 @@ import Home from "./components/Home/Home"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Explorar from "./components/Explorar/Explorar"
 import Layout from "./components/Layout/Layout"
+import '../src/MediaQuery/MediaQuery.css'
 
 
 const Inicio =  () => {

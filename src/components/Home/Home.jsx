@@ -5,6 +5,7 @@ import Main from "./Main/Main"
 import { search, searchVideo } from "../PeticionesFetch/Peticiones"
 import Selector from "../Selector/Selector"
 import '../Home/home.css'
+import BotonesEnlacesMobile from "../BotonesEnlacesMobile/BotonesEnlacesMobile"
 
 const Home = () => {
     const[imagenes, setImagenes] = useState([])
@@ -14,6 +15,11 @@ const Home = () => {
     useEffect(()=>{
         search( "gatos", setImagenes)
     },[])
+
+    useEffect(()=>{
+        searchVideo( "tigers", setVideos)
+    },[])
+
 
    
 
