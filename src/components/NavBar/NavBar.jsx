@@ -6,7 +6,7 @@ import BotonesEnlaces from '../BotonesEnlaces/BotonesEnlaces'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import { Link } from 'react-router-dom'
 import Selector from '../Selector/Selector'
-const NavBar = ( {setImagenes, handleDatosCargados} ) => {
+const NavBar = ( {setImagenes, handleDatosCargados, typeSelector, videos, setVideos} ) => {
     return (
         <nav className='nav'>
             <div className='nav__image'>
@@ -16,7 +16,7 @@ const NavBar = ( {setImagenes, handleDatosCargados} ) => {
             <BotonesEnlaces />
             </div>
             <div className='nav__input'>
-            <InputSearch setImagenes={setImagenes}  />
+            <InputSearch setImagenes={setImagenes}  typeSelector={typeSelector} videos={videos} setVideos={setVideos} />
             </div>
             <Link to={'/perfil'}>
             <AccountCircleIcon fontSize='large' style={{cursor:"pointer"}} />

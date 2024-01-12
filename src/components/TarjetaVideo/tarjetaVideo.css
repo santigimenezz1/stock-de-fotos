@@ -1,0 +1,34 @@
+
+.tarjetaVideo{
+    height: min-content;
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    
+}
+.tarjetaVideo video{
+    width: 100%;
+    height: 100%;
+    
+}
+.botonDescarga{
+    position: absolute;
+    bottom:3%;
+    left: 5%;
+    display: none;
+}
+.tarjetaImagen:hover{
+    .botonDescarga{
+        display: flex;
+    }
+    filter: brightness(0.6);
+    cursor: pointer;  
+}
+.container__botonDescarga{
+    z-index: 2;
+}
+
+
