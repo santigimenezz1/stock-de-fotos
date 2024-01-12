@@ -45,9 +45,7 @@ function ModalVideo( {vid} ) {
             <div className='botonCloseVideo'>
        <BotonClose handleClose={handleClose} />
             </div>
-            <div className='botonDescarga__modal'>
-        <BotonDescarga  />
-            </div>
+            
           <video style={{width:"100%", height:"100%", borderRadius:"20px", border:"none"}} controls className='imagen__modal' src={vid.video_files[0].link}></video >
         </div>
       </Modal>

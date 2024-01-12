@@ -6,9 +6,9 @@ const Main = ({ imagenes, videos, typeSelector }) => {
     return (
         <div>
             {imagenes.length > 0 && typeSelector === "v1" ? (
-                <div className="grid-container">
+                <div className="main__imagenes">
                     {imagenes.map((img) => (
-                        <div className="grid-item" key={img.id}>
+                        <div key={img.id}>
                             <ModalImagen img={img} />
                         </div>
                     ))}

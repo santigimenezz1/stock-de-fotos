@@ -2,7 +2,13 @@ img {
     width: 100%;
     border-radius: 20px;
   }
- 
+  .main__imagenes{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
   .grid-container {
       columns: 5 250px;
       column-gap: 1px;

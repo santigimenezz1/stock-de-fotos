@@ -1,6 +1,8 @@
 
 .tarjetaImagen{
     height: min-content;
+    width: 250px;
+
 }
 .tarjetaImagen img{
     width: 95%;
