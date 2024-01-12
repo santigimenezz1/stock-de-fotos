@@ -16,6 +16,8 @@ const Inicio =  () => {
           <Route path="/explorar" element={<Explorar />}/>
           <Route path="/crear" element={<Home />}/>
           <Route path="/perfil" element={<Home />}/>
+          <Route path="/detalle/:id" element={<h1>este es el detalle del fotografo</h1>} />
+
         </Routes>
         </BrowserRouter>
     )
