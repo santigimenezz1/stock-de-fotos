@@ -3,7 +3,7 @@ import download from 'downloadjs';
 import './tarjetaImagen.css';
 import BotonDescarga from './BotonDescarga/BotonDescarga';
 
-const TarjetaImagen = ({ url, handleOpen }) => {
+const TarjetaImagen = ({ url, handleOpen, img }) => {
   
   const handleDownload = async () => {
     try {
@@ -26,6 +26,7 @@ const TarjetaImagen = ({ url, handleOpen }) => {
         <div className="container__botonDescarga">
           <BotonDescarga handleDownload={handleDownload} />
         </div>
+        
       </div>
     </div>
   );

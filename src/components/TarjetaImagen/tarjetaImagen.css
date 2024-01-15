@@ -25,5 +25,11 @@
 .container__botonDescarga{
     z-index: 2;
 }
+.container__botonDescarga{
+    display: flex;
+    font-size: 10px;
+    gap: 10px;
+    
+}
 
 
