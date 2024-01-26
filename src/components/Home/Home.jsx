@@ -18,24 +18,17 @@ const Home = () => {
     },[])
 
     useEffect(()=>{
-        searchVideo( "tigers", setVideos)
+        searchVideo( "cats", setVideos)
     },[])
-
     
-
-   
-
-
-    console.log({imagenes})
+    
     return (
         <>
         <NavBar setImagenes={setImagenes} typeSelector={typeSelector} videos={videos} setVideos={setVideos} />
         <div className="container__selector">
             <Selector setTypeSelector={setTypeSelector} />
         </div>
-        <div className="titulo">
-            <h1>Fotos de gatos</h1>
-        </div>
+        
         <Main imagenes={imagenes} typeSelector={typeSelector} videos={videos}/>
     </>
     )

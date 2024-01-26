@@ -4,11 +4,12 @@ import InputSearch from '../InputSearch/InputSearch'
 import './navBar.css'
 import BotonesEnlaces from '../BotonesEnlaces/BotonesEnlaces'
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-import { Link } from 'react-router-dom'
+import { Link, Outlet } from 'react-router-dom'
 import Selector from '../Selector/Selector'
 import BotonesEnlacesMobile from '../BotonesEnlacesMobile/BotonesEnlacesMobile'
 const NavBar = ( {setImagenes, handleDatosCargados, typeSelector, videos, setVideos} ) => {
     return (
+        <>
         <nav className='nav'>
             <div className='nav__image'>
                 <Link to={'/'}>
@@ -26,6 +27,12 @@ const NavBar = ( {setImagenes, handleDatosCargados, typeSelector, videos, setVid
             <AccountCircleIcon fontSize='large' style={{cursor:"pointer"}} />
             </Link>
         </nav>
+        <Outlet />
+
+        </>
+        
+        
+       
     )
 }
 export default NavBar

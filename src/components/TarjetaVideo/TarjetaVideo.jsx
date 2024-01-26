@@ -18,6 +18,9 @@ const TarjetaVideo = ({ vid, handleOpen }) => {
     videoRef.current.pause();
   };
 
+
+  console.log({vid})
+
   return (
     <div className="tarjetaVideo" onMouseEnter={handleHover} onMouseLeave={handleMouseLeave}>
       <div className='tarjetaVideo__imagenReproductor'>
@@ -26,7 +29,7 @@ const TarjetaVideo = ({ vid, handleOpen }) => {
       <div onClick={() => handleOpen()}>
         <video
           ref={videoRef}
-          poster={vid.video_pictures[0].picture}
+          poster={vid.video_pictures[4].picture}
           src={videosSd[0].link}
           style={{ borderRadius: '20px' }}
         ></video>

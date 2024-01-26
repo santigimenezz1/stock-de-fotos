@@ -6,6 +6,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import Explorar from "./components/Explorar/Explorar"
 import Layout from "./components/Layout/Layout"
 import '../src/MediaQuery/MediaQuery.css'
+import DetalleExplorar from "./components/Explorar/DetalleExplorar/DetalleExplorar"
 
 
 const Inicio =  () => {
@@ -16,8 +17,8 @@ const Inicio =  () => {
           <Route path="/explorar" element={<Explorar />}/>
           <Route path="/crear" element={<Home />}/>
           <Route path="/perfil" element={<Home />}/>
+          <Route path="/explorar/:nombre" element={<DetalleExplorar />}/>
           <Route path="/detalle/:id" element={<h1>este es el detalle del fotografo</h1>} />
-
         </Routes>
         </BrowserRouter>
     )
