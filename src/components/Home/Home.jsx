@@ -20,8 +20,20 @@ const Home = () => {
     useEffect(()=>{
         searchVideo( "cats", setVideos)
     },[])
-    
-    
+
+    const [scrollY, setScrollY] = useState(0);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        setScrollY(window.scrollY);
+      };
+      // Llamar a handleScroll directamente al montar el componente para obtener el valor inicial
+      handleScroll();
+  
+      // Agregar el evento de scroll al objeto document
+      document.addEventListener("scroll", handleScroll);
+    }, []); 
+  
     return (
         <>
         <NavBar setImagenes={setImagenes} typeSelector={typeSelector} videos={videos} setVideos={setVideos} />
